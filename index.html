@@ -1,71 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Garcia Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
+<body class="bg-gray-100 text-gray-800">
 
-<body>
-    <section class="bg-gray-100  min-h-screen ">
+  <!-- HERO -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-10 py-20 bg-gray-50">
+    <div>
+      <h1 class="text-5xl font-bold mb-4">Hi, I am <br><span class="text-blue-600">Robert Garcia.</span></h1>
+      <p class="mb-6 max-w-lg text-lg">A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
+      <button class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600">Contact Me</button>
+      <div class="flex space-x-4 mt-6 text-2xl text-blue-600">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+      </div>
+    </div>
+    <div class="mt-8 md:mt-0">
+      <img src="your-photo.jpg" alt="Robert Garcia" class="w-72 h-72 rounded-2xl object-cover shadow-lg">
+    </div>
+  </section>
 
-        
-            <div class="grid grid-cols-1 md:grid-cols-2  py-[120px] px-[100px] justify-center items-center">
-            <div>
-                <h1 class="uppercase font-Bebas text-[110px] leading-[90%] font-normal ">
-                
-                 hi, i am monirul islam</h1>
+  <!-- ABOUT -->
+  <section class="px-10 py-20 bg-white flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I am a front-end developer based in Sydney looking for exciting opportunities. 
+        Has Mechanical Engineering background. Likes to focus on accessibility when developing. 
+        Passionate and curious about solving problems. Currently exploring ReactJS, Webflow and a bit of Designing. 
+        While not programming, I enjoy football, photography, and playing Valorant. 
+      </p>
+    </div>
+    <div>
+      <img src="your-photo.jpg" alt="About Robert" class="w-72 h-72 rounded-2xl object-cover shadow-lg">
+    </div>
+  </section>
 
-                <p class="text-[18px] leading-[26px] text-[#B2B0B0]">A Sydney based front-end developer passionate about building accessible and user friendly websites.
-                </p>
+  <!-- SERVICES -->
+  <section class="px-10 py-20 bg-gray-50">
+    <h2 class="text-3xl font-bold mb-12 text-center">My Services</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+        <i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Web Development</h3>
+        <p>Blog, E-Commerce</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+        <i class="fas fa-microphone text-4xl text-blue-600 mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Sound Design</h3>
+        <p>Blog, E-Commerce</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+        <i class="fas fa-pencil-ruler text-4xl text-blue-600 mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">UI/UX Design</h3>
+        <p>Blog, E-Commerce</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+        <i class="fas fa-gamepad text-4xl text-blue-600 mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Game Design</h3>
+        <p>Blog, E-Commerce</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+        <i class="fas fa-camera text-4xl text-blue-600 mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Photography</h3>
+        <p>Blog, E-Commerce</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+        <i class="fas fa-bullhorn text-4xl text-blue-600 mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Advertising</h3>
+        <p>Creative Campaigns</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- PORTFOLIO -->
+  <section class="px-10 py-20 bg-white">
+    <h2 class="text-3xl font-bold mb-12 text-center">Portfolio</h2>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+      <div class="bg-gray-200 h-40 rounded-lg"></div>
+    </div>
+  </section>
 
+  <!-- BLOG -->
+  <section class="px-10 py-20 bg-gray-50">
+    <h2 class="text-3xl font-bold mb-12 text-center">Blog</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <img src="blog1.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="font-semibold text-xl mb-2">How to Make Web Templates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View →</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <img src="blog2.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="font-semibold text-xl mb-2">How to Make Web Templates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View →</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <img src="blog3.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="font-semibold text-xl mb-2">How to Make Web Templates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View →</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- FEATURED PROJECTS -->
+  <section class="px-10 py-20 bg-white">
+    <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <img src="project1.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="font-semibold text-xl mb-2">Promotional landing page for our favorite show</h3>
+        <p>Delivered a fully responsive design with dynamic content capabilities.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View →</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <img src="project2.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="font-semibold text-xl mb-2">Promotional landing page for our favorite show</h3>
+        <p>Delivered a fully responsive design with dynamic content capabilities.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View →</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <img src="project3.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="font-semibold text-xl mb-2">Promotional landing page for our favorite show</h3>
+        <p>Delivered a fully responsive design with dynamic content capabilities.</p>
+        <a href="#" class="text-blue-600 mt-2 inline-block">View →</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- EDUCATION -->
+  <section class="px-10 py-20 bg-gray-50">
+    <h2 class="text-3xl font-bold mb-12 text-center">Education</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl">University of Toronto - Certificate of Web Training</h3>
+        <p class="text-sm text-gray-600">Student | Jan 2019 - Dec 2020</p>
+        <p class="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl">University of Toronto - Certificate of Web Training</h3>
+        <p class="text-sm text-gray-600">Student | Jan 2018 - Dec 2019</p>
+        <p class="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-xl">University of Toronto - Certificate of Web Training</h3>
+        <p class="text-sm text-gray-600">Student | Jan 2017 - Dec 2018</p>
+        <p class="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+    </div>
+  </section>
 
-                
-                <div class="flex gap-2 items-center">
+  <!-- RECOMMENDATIONS -->
+  <section class="px-10 py-20 bg-white">
+    <h2 class="text-3xl font-bold mb-12 text-center">Recommendations</h2>
+    <div class="grid md:grid-cols-5 gap-6">
+      <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+        <img src="avatar1.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+        <h3 class="font-semibold">James Gouse</h3>
+        <p class="text-sm text-gray-600">Graphic Designer</p>
+        <p class="mt-2">Great Quality!</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+        <img src="avatar2.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+        <h3 class="font-semibold">James Gouse</h3>
+        <p class="text-sm text-gray-600">Graphic Designer</p>
+        <p class="mt-2">Great Quality!</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+        <img src="avatar3.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+        <h3 class="font-semibold">James Gouse</h3>
+        <p class="text-sm text-gray-600">Graphic Designer</p>
+        <p class="mt-2">Great Quality!</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+        <img src="avatar4.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+        <h3 class="font-semibold">James Gouse</h3>
+        <p class="text-sm text-gray-600">Graphic Designer</p>
+        <p class="mt-2">Great Quality!</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+        <img src="avatar5.jpg" class="w-16 h-16 mx-auto rounded-full mb-4">
+        <h3 class="font-semibold">James Gouse</h3>
+        <p class="text-sm text-gray-600">Graphic Designer</p>
+        <p class="mt-2">Great Quality!</p>
+      </div>
+    </div>
+  </section>
 
-                    <button class="bg-[#23BBF8] text-white p-4">Contact Me</button>
+  <!-- CONTACT -->
+  <section class="px-10 py-20 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold mb-6">Let’s Connect</h2>
+    <p class="mb-4">Say hello at <a href="mailto:robertgarcia@gmail.com" class="text-blue-600">robertgarcia@gmail.com</a></p>
+    <p>📞 01XXXXXXXX</p>
+    <p>📍 Sydney, Australia</p>
+    <div class="flex justify-center space-x-6 mt-6 text-2xl text-blue-600">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-sm bg-white border-t">
+    © 2025 All Rights Reserved. Robert Garcia
+  </footer>
 
-
-                    <a href="">
-                        <i class="fa-brands fa-linkedin-in text-white bg-[#23BBF8] rounded-full p-4"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa-brands fa-github text-white bg-[#23BBF8] rounded-full"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div>
-            <h1>hello</h1>
-        </div>
-
-        </div>
-
-
-
-        
-        
-
-
-
-    </section>
 </body>
-
 </html>
